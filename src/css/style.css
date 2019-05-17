@@ -1502,6 +1502,9 @@ button:focus {
 }
 
 .im-box .headpic {
+	background:url('http://54.223.113.201:1234/headpic.jpg'); 
+	background-size: cover; 
+	background-repeat: no-repeat;
 	width: 28px;
 	height: 28px;
 	border-radius: 100%;

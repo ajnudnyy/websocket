@@ -4,7 +4,7 @@
 			<el-tabs :tab-position="tabPosition" @tab-click="tabClick">
 				<el-tab-pane v-for="item in chatList">
 					<p slot="label" style="text-overflow: ellipsis;white-space: nowrap;overflow: hidden;">
-						<img :src="item.headpic" class="headpic" /> {{item.nickName}}
+						<label class="headpic" />custom {{item.nickName}}
 					</p>
 					<el-container>
 						<el-header style="padding:20px 10px;border-bottom: 1px #ccc solid;">
@@ -34,6 +34,9 @@
 	import login from '../login/index.vue';
 	let imWebSocket;
 	let loading;
+
+	const headpic = 'http://54.223.113.201:1234/headpic.jpg';
+
 	export default {
 		name: 'chat',
 		/*
@@ -47,10 +50,10 @@
 		},
 		data() {
 			return {
-				wsUrl: '127.0.0.1',
+				wsUrl: '52.81.36.179',
 				wsPort: 3000,
 				userId: new Date().getTime() + '',
-				headpic: 'images/headpic.jpg',
+				headpic: headpic,
 				tabPosition: 'left',
 				chatList: [],
 				msg: '',

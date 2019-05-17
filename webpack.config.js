@@ -33,7 +33,6 @@ module.exports = {
 					presets: ['es2015']
 				}
 			},
-
 			{
 				test: /\.css$/,
 				loader: ExtractTextPlugin.extract({

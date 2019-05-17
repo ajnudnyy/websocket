@@ -9,7 +9,7 @@ const WebSocketServer = require('ws').Server,
 const nm_url = require('url');
 
 //用户头像
-const headpic = 'static/headpic.jpg';
+const headpic = 'http://54.223.113.201:1234/headpic.jpg';
 
 //客户端连接信息
 var data_clientsInfo = {};
